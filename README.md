@@ -2,10 +2,7 @@
 ## Terraform for interview
    * Create AWS account
    * Create user account with Programmatic access and Administrator role access
-
-   * Write terraform to create VPC/Security Groups
-   * Write terraform to automatically bring up EC2 instances that runs a simple httpd/apache default website
-
+   * Write terraform to create VPC/Security Groups/ALB/Amzn2 Instance
 
 
 ### Export AWS secret keys, else define them in `aws-provider.tf` -
@@ -16,15 +13,15 @@ export AWS_DEFAULT_REGION=us-west-2
 ```
 ### Initialize terraform -
 ```sh
-../terraform init
+terraform init
 ```
 ### Plan (shows execution plan) -
 ```sh
-../terraform plan -out terraform-plan-key
+terraform plan -out terraform-plan-key
 ```
 ### Apply (Creates the defined infrastructure) -
 ```sh
-../terraform apply terraform-plan-key
+tterraform apply terraform-plan-key
 ```
 ### Output -
 You will get the ALB DNS name in the output. Open the URL in your browser to see the webpage.
@@ -44,5 +41,5 @@ dns_name = inkstom-alb-1400988643.us-east-2.elb.amazonaws.com
 ```
 ### Destroy the infra which we build just now -
 ```sh
-../terraform destroy
+terraform destroy
 ```
