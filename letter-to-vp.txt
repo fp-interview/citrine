@@ -1,0 +1,26 @@
+Mr./Mrs. VP of Engineering,
+
+Thank you for voicing your concerns so thoroughly. I appreciate that you are able to clearly enumerate your concerns about implementing CI/CD pipelines in our workflows. I would like to speak to those concerns one by one. 
+
+* We have too many customers to configure CI/CD for - at Citrine every customer gets their own AWS account
+
+With our integrated LDAP managed access we will be able to delegate access through one account rather than managing them individually at each application, thereby reducing complexity as well as many security concerns. It also takes away from the administrative overhead thanks to JIT (Just In Time) provisioning and deprovisioning in one place. 
+
+* We should release our code at the end of every sprint
+* Each team uses different technologies
+
+I see these two as part of the same issue. Each team definitely has different use cases and different requiremenets. Thanks to applications like Jenkins/Hudson/Github/Gitlab we are able to tailor unit testing and QA programmatically and incrementally as well as at the end of every sprint to ensure quality as well as making sure the cadence of releases can keep a prompt schedule. Additionally, with the help of different branches in git, each developer can develop, test, and automate deploys faster. Code review is made available and can be made mandatory before checking it into the protected branches. This would prevent accidental breakage of deployment scripts and give a quick solition to revert changes quickly in the event of such incidents. Technologies can be integrated at any level of the pipelines, for example, Jenkins can be configured to test on OracleJDK, and OpenJDK, as well as different versions of both all in one test.
+
+* We can’t afford to take engineers off of product work to work on it
+
+The most difficult part of using CI/CD is the initial setup of the environments. It is an investment that would ultimately save money and time. Compared to not using CI/CD, the utility would far surpass the present usability once everything is functional. Almost set it and forget it, but as with all things, there will be required maintenance. In the words of Gitlab, "Bad code rarely makes it to production because continuous testing is automated. Developers can focus on the code rather than the production environment, and operations doesn’t have to feel like a gatekeeper or a barrier. Both teams can work to their strengths, and automated handoffs make for seamless processes. This kind of cooperation makes DevOps possible."
+
+I am available to discuss further at your convenience and will be able to address issues as they arise. I can confidently say that we will benefit from implementing CI/CD pipelines in our environment. 
+
+Thank you and I appreciate your time. 
+
+Best, 
+
+Thomas Inks
+Infrastructure Engineer
+Citrine Informatics
